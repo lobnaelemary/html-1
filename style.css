@@ -1,34 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family:"Poppins", sans-serif;
     background-color: #e9ed9a;
     margin: 10px;
     padding: 20px;
+    line-height: normal;
+    text-align: initial;
   }
-  
+
   h1 {
     font-size: 32px;
     color: #e217db;
     text-align: center;
     padding: 10px;
     margin: 20px;
+    line-height: normal;
   }
-  
+
   h2 {
     font-size: 24px;
     color: #43d41b;
     text-align: left;
     padding: 10px;
     margin: 15px;
+    line-height: normal;
   }
-  
+
   .blog-detail {
     border: 5px solid #ffffff;
     padding: 25px;
     margin: 40px;
     background-color: #fccff4;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 10px;
+    line-height:normal;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(99, 51, 142);
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color:antiquewhite;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  }
+
+  .blog-list {
+    flex: 1;
+    min-width: 250px;
+  }
+  .blog-detail {
+    flex: 3;
+    min-width: 300px;
   }
