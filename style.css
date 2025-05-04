@@ -11,6 +11,8 @@
     padding: 20px;
     line-height: normal;
     text-align: initial;
+    flex-direction: column;
+    display: flex;
   }
 
   h1 {
@@ -36,6 +38,17 @@
     padding: 25px;
     margin: 40px;
     background-color: #fccff4;
+    flex:3;
+    min-width: 350px;
+  }
+
+  .blog-list {
+    flex:content;
+    display: flex;
+    width:fit-content;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width:250px;
   }
 
   p {
@@ -46,15 +59,15 @@
 
   nav ul {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    justify-content:space-around;
+    list-style:none;
     padding: 10px;
     margin: 10px;
     background-color:rgb(99, 51, 142);
   }
 
   nav ul li a {
-    text-decoration: none;
+    text-decoration:none;
     color:antiquewhite;
     padding: 10px;
   }
@@ -63,13 +76,4 @@
     section {
       flex-direction: column;
     }
-  }
-
-  .blog-list {
-    flex: 1;
-    min-width: 250px;
-  }
-  .blog-detail {
-    flex: 3;
-    min-width: 300px;
   }
