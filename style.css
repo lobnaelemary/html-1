@@ -13,8 +13,10 @@
     text-align: initial;
     flex-direction: column;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-
+  
   h1 {
     font-size: 32px;
     color: #e217db;
@@ -39,7 +41,7 @@
     margin: 40px;
     background-color: #fccff4;
     flex:3;
-    min-width: 350px;
+    overflow: auto;
   }
 
   .blog-list {
@@ -48,18 +50,17 @@
     width:fit-content;
     flex-wrap: wrap;
     flex: 1;
-    min-width:250px;
   }
 
   p {
     font-size: 20px;
     margin: 10px;
-    line-height:normal;
+    line-height: 50px;
   }
 
   nav ul {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     list-style:none;
     padding: 10px;
     margin: 10px;
@@ -70,6 +71,29 @@
     text-decoration:none;
     color:antiquewhite;
     padding: 10px;
+  }
+  
+  nav ul li a:hover{
+    color:aqua;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+
+  .nav-list{
+    box-sizing:border-box;
+    display: flex;
+    align-items:center;
+  }
+
+  .nav-list h1 {
+    text-align:left;
+  }
+
+  .nav-list nav ul {
+    text-align:justify;
+    list-style:none;
+    display: list-item;
+    flex-direction: column;
   }
 
   @media (max-width: 768px) {
